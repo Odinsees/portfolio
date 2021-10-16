@@ -1,0 +1,31 @@
+.myProjectBlock{
+    min-height: 100vh;
+    background-color: #b3f5eb;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.myProjectContainer{
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.titleBox{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    background-color: #79ef4b;
+}
+
+.projectBox{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

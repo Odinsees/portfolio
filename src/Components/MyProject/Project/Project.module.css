@@ -1,0 +1,39 @@
+.projectBlock{
+    width: 280px;
+    background-color: #cecece;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.projectImg{
+    width: 100%;
+    height: 200px;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.viewButton{
+    width: 100px;
+    height: 40px;
+    background-color: #c8c8ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.description{
+    width: 100%;
+    background-color: #79ef4b;
+}

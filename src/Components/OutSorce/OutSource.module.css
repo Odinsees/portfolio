@@ -1,0 +1,27 @@
+.recruitBlock{
+    height: 40vh;
+    text-align: center;
+    background-color: wheat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.recruitContainer{
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid red;
+    background-color: skyblue;
+}
+
+.text{
+    background-color: #bbaeae;
+}
+
+.recruitButton{
+    width: 100px;
+    height: 40px;
+    background-color: #b3f5eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

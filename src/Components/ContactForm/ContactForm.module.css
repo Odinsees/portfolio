@@ -1,0 +1,23 @@
+.formBlock{
+    height: 100vh;
+    background-color: #bbaeae;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.formContainer{
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title{
+    background-color: #b3f5eb;
+}
+
+.recruitButton{
+    background-color: #b3f5eb;
+    height: 5%;
+    width: 30%;
+}
