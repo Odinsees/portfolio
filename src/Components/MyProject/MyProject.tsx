@@ -4,9 +4,9 @@ import styleContainer from "../../common/styles/Container.module.css"
 import {Project} from "./Project/Project";
 
 let project = [
-    {title:"Social Network", icon:"", description:"Social network for people"},
-    {title:"Todolist", icon:"", description:"Todolist"},
-    {title:"Counter", icon:"", description:"Counter"},
+    {id:1, title:"Social Network", icon:"", description:"Social network for people"},
+    {id:2,title:"Todolist", icon:"", description:"Todolist"},
+    {id:3,title:"Counter", icon:"", description:"Counter"},
 ]
 
 
@@ -21,7 +21,7 @@ export const MyProject = () => {
                 <div className={style.projectBox}>
                     {project.map(project => {
                         return(
-                            <Project img={project.icon} title={project.title} description={project.description}/>
+                            <Project key={project.id} img={project.icon} title={project.title} description={project.description}/>
                         )
                     })}
                 </div>
