@@ -1,20 +1,13 @@
 .recruitBlock{
-    height: 40vh;
-    text-align: center;
-    background-color: wheat;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    /*height: 40vh;
+    text-align: center;*/
+    background-color: #212529;
 }
 
 .recruitContainer{
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid red;
-    background-color: skyblue;
-}
-
-.text{
-    background-color: #bbaeae;
 }
 
 .recruitButton{

@@ -11,7 +11,7 @@ export const Main = () => {
                     <h1>I am Pavel Lebedev</h1>
                     <p>Front-end developer!</p>
                 </div>
-                <div className={style.photo}></div>
+                <div className={style.myPhoto}></div>
             </div>
         </div>
     );

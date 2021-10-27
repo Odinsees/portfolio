@@ -1,28 +1,25 @@
 .footerBlock{
-    height: 30vh;
     text-align: center;
-    background-color: wheat;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background-color: #212529;
 }
 
 .footerContainer{
     flex-direction: column;
     border: 1px solid red;
-    background-color: skyblue;
 }
 
 .text{
     background-color: #bbaeae;
 }
 
-.imageBox{
+.iconBox{
     display: flex;
     justify-content: space-between;
     min-width: 280px;
     border: 1px solid red;
+    align-items: center;
 }
-.image{
+.socialIcon{
     width: 40px;
     height: 40px;
     background-color: green;

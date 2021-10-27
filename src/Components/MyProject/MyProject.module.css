@@ -1,31 +1,23 @@
-.myProjectBlock{
-    min-height: 100vh;
-    background-color: #b3f5eb;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.myProjectBlock {
+    background-color: #212529;
 }
 
-.myProjectContainer{
+.myProjectContainer {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.titleBox{
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title{
-    background-color: #79ef4b;
-}
-
-.projectBox{
-    border: 1px solid red;
+.projectBox {
     width: 100%;
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 1054px) {
+    .projectBox {
+        justify-content: center;
+    }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import style from "./skills.module.css"
 import styleContainer from "../../common/styles/Container.module.css"
 import {Skill} from "./Skill/Skill";
+import {Title} from "../Titile/Title";
 
 let skills = [
     {id: 1, title:"JS", icon:"", description:"Description of skills here"},
@@ -16,9 +17,7 @@ export const Skills = () => {
     return (
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                <div className={style.titleBox}>
-                    <h2 className={style.title}>My Skills</h2>
-                </div>
+                <Title title={'my skills'}/>
                 <div className={style.skills}>
                     {skills.map(skills => {
                         return(
