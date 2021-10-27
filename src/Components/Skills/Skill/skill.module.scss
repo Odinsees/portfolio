@@ -1,6 +1,8 @@
+@import "../../../../src/common/styles/sass/variables.scss";
+
 .skillBlock{
     width: 280px;
-    background-color: #cecece;
+    background-color: $secondBackGroundColor;
     border: 1px solid red;
     display: flex;
     flex-direction: column;
@@ -14,14 +16,21 @@
     background-color: skyblue;
 }
 
+.title{
+    color: white;
+}
+
 .projectTitle{
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
-.projectDescription{
+.description{
     width: 100%;
+    color: white;
+    background-color: $secondBackGroundColor;
 }

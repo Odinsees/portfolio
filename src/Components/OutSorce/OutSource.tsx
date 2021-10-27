@@ -1,7 +1,7 @@
 import React from 'react';
 import style from "./OutSource.module.css"
 import styleContainer from "../../common/styles/Container.module.css"
-import {Title} from "../Titile/Title";
+import {Title} from "../../common/Components/Titile/Title";
 
 
 export const OutSource = () => {

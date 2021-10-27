@@ -1,8 +1,8 @@
 import React from 'react';
-import style from "./skills.module.css"
+import style from "./skills.module.scss"
 import styleContainer from "../../common/styles/Container.module.css"
 import {Skill} from "./Skill/Skill";
-import {Title} from "../Titile/Title";
+import {Title} from "../../common/Components/Titile/Title";
 
 let skills = [
     {id: 1, title:"JS", icon:"", description:"Description of skills here"},

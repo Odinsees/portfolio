@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "./skill.module.css"
+import style from "./skill.module.scss"
 
 type PropsType = {
     img:string

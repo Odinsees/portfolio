@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import style from './MyProject.module.css'
+import style from './MyProject.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 import {Project} from './Project/Project';
-import {Title} from "../Titile/Title";
+import {Title} from "../../common/Components/Titile/Title";
 import todolistBackGround from '../../assets/image/todolistBG.jpg'
 import counterBackGround from '../../assets/image/counterBG.jpg'
 import socialNetworkBackGround from '../../assets/image/socialNetworkBG.jpg'
