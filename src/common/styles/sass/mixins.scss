@@ -1,0 +1,22 @@
+@import "./variables";
+
+@mixin titleText($fontFamily, $fontSize, $lineHeight ){
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color:$titleTextColor;
+}
+
+@mixin otherText($fontFamily, $fontSize, $lineHeight ){
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color:$otherTextColor;
+}
+
+@mixin buttonText($fontFamily, $fontSize, $lineHeight ){
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color:$buttonTextColor;
+}
