@@ -1,0 +1,15 @@
+@import "../../../src/common/styles/sass/variables.scss";
+
+.headerBlock {
+  height: 10vh;
+  background-color: #cecece;
+
+  .headerContainer {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+}
+
+

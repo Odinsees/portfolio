@@ -1,36 +1,39 @@
 @import "../../../../src/common/styles/sass/variables.scss";
 
-.skillBlock{
-    width: 280px;
-    background-color: $secondBackGroundColor;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+.skillBlock {
+  width: 280px;
+  background-color: $secondBackGroundColor;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
-.icon{
+  .icon {
     width: 50px;
     height: 50px;
-    background-color: skyblue;
+    background-color: $primaryColor;
+  }
+
+  .title {
+    color: $titleTextColor;
+    background-color: $secondBackGroundColor;
+  }
+
+  .description {
+    width: 100%;
+    color: $otherTextColor;
+    background-color: $secondBackGroundColor;
+  }
 }
 
-.title{
-    color: white;
-}
 
-.projectTitle{
+/*.projectTitle{
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-}
+}*/
 
-.description{
-    width: 100%;
-    color: white;
-    background-color: $secondBackGroundColor;
-}

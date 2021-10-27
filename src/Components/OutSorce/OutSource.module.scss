@@ -1,0 +1,24 @@
+@import "../../../src/common/styles/sass/variables.scss";
+
+.recruitBlock {
+  /*height: 40vh;
+  text-align: center;*/
+  .recruitContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid red;
+
+    .recruitButton {
+      width: 100px;
+      height: 40px;
+      background-color: $primaryColor;
+      color: $buttonTextColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
+

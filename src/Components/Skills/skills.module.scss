@@ -1,21 +1,19 @@
 @import "../../../src/common/styles/sass/variables.scss";
 
-.skillsBlock{
-
-}
-
-.skillsContainer{
+.skillsBlock {
+  .skillsContainer {
     flex-direction: column;
+
+    .skills {
+      border: 1px solid red;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
 }
 
-.projectTitle{
-    background-color: #79ef4b;
-}
 
-.skills{
-    border: 1px solid red;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+
+
