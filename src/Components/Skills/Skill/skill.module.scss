@@ -2,7 +2,7 @@
 
 .skillBlock {
   width: 200px;
-  height: 200px;
+  min-height: 200px;
   background-color: $secondBackGroundColor;
   display: flex;
   flex-direction: column;
@@ -10,11 +10,14 @@
   text-align: center;
   justify-content: space-around;
   margin: 20px;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
+  border-bottom: 1px solid $secondBackGroundColor;
+  transition: 1s;
   @media screen and (max-width: 400px) {
     width: 100%
   }
   &:hover{
+    transition: 1s;
     border-bottom: 1px solid $primaryColor;
   }
   .icon {

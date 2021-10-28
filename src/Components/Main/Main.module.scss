@@ -4,14 +4,17 @@
 .mainBlock {
   height: 100vh;
   background-color: $backGroundColor;
+
   .mainContainer {
     align-items: flex-start;
-    .info{
+
+    .info {
       width: 100%;
       height: fit-content;
       box-sizing: border-box;
       display: flex;
       flex-wrap: wrap;
+
       .myPhoto {
         max-width: 40%;
         padding-left: 15px;
@@ -21,9 +24,17 @@
           box-sizing: border-box;
           max-width: 400px;
           width: 100%;
-          padding: .25rem;
+          border-bottom: 4px solid $backGroundColor;
+          border-right: 4px solid $backGroundColor;
+          transition: 1s;
+          &:hover{
+            border-bottom: 4px solid $primaryColor;
+            border-right: 4px solid $primaryColor;
+            transition: 1s;
+          }
         }
       }
+
       .infoContent {
         width: 60%;
         height: 100%;
@@ -77,6 +88,7 @@
             box-sizing: border-box;
 
             font-family: Poppins, sans-serif;
+
             .row {
               display: flex;
               flex-wrap: wrap;
@@ -97,7 +109,7 @@
                 display: inline-block;
                 margin-bottom: 0;
                 margin-top: 0;
-                color:$otherTextColor;
+                color: $otherTextColor;
                 font-size: 15px;
               }
 
@@ -111,39 +123,56 @@
             }
           }
 
-          .contactBlock{
+          .contactBlock {
             display: flex;
             align-items: center;
-            .downloadBTN{
+
+            .downloadBTN {
               text-decoration: none;
               margin-right: 23px;
-              background-color:$primaryColor;
-              border:$primaryColor ;
+              background-color: $primaryColor;
+              border: $primaryColor;
               color: $buttonTextColor;
               font-size: 14px;
               padding: 10px 35px;
               font-family: $fontFamily;
               border-radius: 30px;
               transition: 1s;
-              &:hover{
+
+              &:hover {
                 transform: scale(1.05);
                 transition: 1s;
               }
             }
-            .contacts{
-              & img{
+
+            .contacts {
+              margin-left: 60px;
+              position: relative;
+              &:before{
+                background-color: rgba(255,255,255,.25);
+                content: '';
+                height: 2px;
+                margin-right: 23px;
+                width: 60px;
+                position: absolute;
+                top:43%;
+                left: -47%;
+              }
+              & img {
                 margin-left: 10px;
                 background: $primaryColor;
                 background-size: 30px 30px;
                 border-radius: 7px;
                 transition: 1s;
-                &:hover{
+
+                &:hover {
                   background: white;
                   cursor: pointer;
                   transition: 1s;
                 }
               }
             }
+
           }
         }
       }

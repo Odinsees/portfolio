@@ -58,7 +58,7 @@ export const Main = () => {
                                     role="button"
                                     className={style.downloadBTN}>Download CV</a>
                                 <div className={style.contacts}>
-                                    <a target={'_blank'} href="https://ru.stackoverflow.com/questions/783780/%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D1%86%D0%B2%D0%B5%D1%82-svg-%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F">
+                                    <a target={'_blank'} href="">
                                         <img src={linkedinIcon} alt=""/>
                                     </a>
                                     <a target={'_blank'} href="">
@@ -70,7 +70,6 @@ export const Main = () => {
                                     <a target={'_blank'} href="">
                                         <img src={telegramIcon} alt=""/>
                                     </a>
-
                                 </div>
                             </div>
                         </div>
