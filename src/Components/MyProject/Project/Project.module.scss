@@ -31,10 +31,13 @@
       left: 0;
       right: 0;
       opacity: 0.3;
+      transition: 0.5s;
     }
 
     &:hover .viewButton {
       opacity: 1;
+      transition: 0.5s;
+      cursor: pointer;
     }
 
     .viewButton {
