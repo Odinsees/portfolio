@@ -3,13 +3,13 @@
 .skillsBlock {
   .skillsContainer {
     flex-direction: column;
+    width: 80%;
 
     .skills {
-      border: 1px solid red;
-      width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+      padding: 10px;
     }
   }
 }

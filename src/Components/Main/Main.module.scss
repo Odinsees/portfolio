@@ -1,21 +1,152 @@
 @import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
 
 .mainBlock {
   height: 100vh;
   background-color: $backGroundColor;
-
   .mainContainer {
-    justify-content: space-between;
+    align-items: flex-start;
+    .info{
+      width: 100%;
+      height: fit-content;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      .myPhoto {
+        max-width: 40%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        & img {
+          box-sizing: border-box;
+          max-width: 400px;
+          width: 100%;
+          padding: .25rem;
+        }
+      }
+      .infoContent {
+        width: 60%;
+        height: 100%;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
 
-    .greetingText {
-      width: 300px;
-      color: white;
-    }
+        .infoBlock {
 
-    .myPhoto {
-      width: 300px;
-      height: 300px;
-      background-color: $primaryColor;
+          .subTitle {
+            width: 100%;
+            margin-bottom: 15px;
+            margin-top: 0;
+            @include titleText($fontFamily, 24px, 1);
+            font-weight: 500;
+            line-height: 1.2;
+            color: $primaryColor;
+          }
+
+          .contentTitle {
+            width: 100%;
+            margin-bottom: 16px;
+            margin-top: 0;
+
+            @include titleText($fontFamily, 31px, 1.6);
+            font-weight: 700;
+          }
+
+          .contentDescription {
+            width: 100%;
+            box-sizing: border-box;
+
+            font-size: 15px;
+            color: #9f9f9f;
+            font-family: Poppins, sans-serif;
+            line-height: 1.95;
+
+            & p {
+              border-bottom: 2px solid rgba(255, 255, 255, .08);
+              margin-bottom: 0;
+              margin-top: 0;
+              padding-bottom: 29px;
+            }
+          }
+
+          .address {
+            font-size: 15px;
+            margin-bottom: 4px;
+            padding: 29px 0;
+            box-sizing: border-box;
+
+            font-family: Poppins, sans-serif;
+            .row {
+              display: flex;
+              flex-wrap: wrap;
+
+              .singleInfo {
+                margin-bottom: 10px;
+                width: 50%;
+              }
+
+              & span {
+                color: $titleTextColor;
+                font-weight: 400;
+                margin-right: 10px;
+                font-size: 15px;
+              }
+
+              & p {
+                display: inline-block;
+                margin-bottom: 0;
+                margin-top: 0;
+                color:$otherTextColor;
+                font-size: 15px;
+              }
+
+              & a {
+                display: inline-block;
+                margin-bottom: 0;
+                margin-top: 0;
+                color: $primaryColor;
+                text-decoration: none;
+              }
+            }
+          }
+
+          .contactBlock{
+            display: flex;
+            align-items: center;
+            .downloadBTN{
+              text-decoration: none;
+              margin-right: 23px;
+              background-color:$primaryColor;
+              border:$primaryColor ;
+              color: $buttonTextColor;
+              font-size: 14px;
+              padding: 10px 35px;
+              font-family: $fontFamily;
+              border-radius: 30px;
+              transition: 1s;
+              &:hover{
+                transform: scale(1.05);
+                transition: 1s;
+              }
+            }
+            .contacts{
+              & img{
+                margin-left: 10px;
+                background: $primaryColor;
+                background-size: 30px 30px;
+                border-radius: 7px;
+                transition: 1s;
+                &:hover{
+                  background: white;
+                  cursor: pointer;
+                  transition: 1s;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
