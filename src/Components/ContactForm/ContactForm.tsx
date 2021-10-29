@@ -2,7 +2,10 @@ import React from 'react';
 import style from "./ContactForm.module.scss"
 import styleContainer from "../../common/styles/Container.module.css"
 import {Title} from "../../common/Components/Titile/Title";
-
+import user from "../../assets/image/icon/contactsIcon/user.svg"
+import location from "../../assets/image/icon/contactsIcon/location.svg"
+import phone from "../../assets/image/icon/contactsIcon/phone.svg"
+import mail from "../../assets/image/icon/contactsIcon/mail.svg"
 
 export const ContactForm = () => {
     return (
@@ -38,8 +41,7 @@ export const ContactForm = () => {
                             <p className={style.infoDescription}>Always available for freelance work if the right project comes along, Feel free to contact me!</p>
                             <ul className={style.ulContacts}>
                                 <li className={style.liContacts}>
-                                    <div className={style.contactIcon}>
-                                        <img src="" alt=""/>
+                                    <div style={{backgroundImage:`url(${user})`}} className={style.contactIcon}>
                                     </div>
                                     <div className={style.infoDetails}>
                                         <h6 className={style.infoTitle}>Name</h6>
@@ -47,8 +49,7 @@ export const ContactForm = () => {
                                     </div>
                                 </li>
                                 <li className={style.liContacts}>
-                                    <div className={style.contactIcon}>
-                                        <img src="" alt=""/>
+                                    <div style={{backgroundImage:`url(${location})`}} className={style.contactIcon}>
                                     </div>
                                     <div className={style.infoDetails}>
                                         <h6 className={style.infoTitle}>Location</h6>
@@ -56,8 +57,7 @@ export const ContactForm = () => {
                                     </div>
                                 </li>
                                 <li className={style.liContacts}>
-                                    <div className={style.contactIcon}>
-                                        <img src="" alt=""/>
+                                    <div style={{backgroundImage:`url(${phone})`}} className={style.contactIcon}>
                                     </div>
                                     <div className={style.infoDetails}>
                                         <h6 className={style.infoTitle}>Call me</h6>
@@ -65,8 +65,7 @@ export const ContactForm = () => {
                                     </div>
                                 </li>
                                 <li className={style.liContacts}>
-                                    <div className={style.contactIcon}>
-                                        <img src="" alt=""/>
+                                    <div style={{backgroundImage:`url(${mail})`}} className={style.contactIcon}>
                                     </div>
                                     <div className={style.infoDetails}>
                                         <h6 className={style.infoTitle}>Email me</h6>

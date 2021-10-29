@@ -148,10 +148,12 @@
             display: flex;
             align-items: center;
             .contactIcon{
-              width: 30px;
-              height: 30px;
-              background-color: #009e66;
+              width: 40px;
+              height: 40px;
               margin-right: 20px;
+              background-size: 30px 30px;
+              background-repeat: no-repeat;
+              background-position: center;
             }
             .infoDetails{
               padding-left: 20px;
@@ -164,6 +166,7 @@
                 font-family: $fontFamily;
               }
               .infoValue{
+                margin: 0;
                 font-family: $fontFamily;
                 color:$otherTextColor;
                 font-size: 12px;
