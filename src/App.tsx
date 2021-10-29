@@ -8,17 +8,28 @@ import {OutSource} from "./Components/OutSorce/OutSource";
 import {ContactForm} from "./Components/ContactForm/ContactForm";
 import {Footer} from "./Components/Footer/Footer";
 
+import {Link, Element, Events, animateScroll as scroll, scrollSpy, scroller} from 'react-scroll'
+
+
 function App() {
     return (
-        <div className="App">
-            <Header/>
-            <Main/>
-            <Skills/>
-            <MyProject/>
-            <OutSource/>
-            <ContactForm/>
-            <Footer/>
-        </div>
+            <div className="App">
+                <Header/>
+                <Element name='main'>
+                    <Main/>
+                </Element>
+                <Element name='skills'>
+                    <Skills/>
+                </Element>
+                <Element name='myProject'>
+                    <MyProject/>
+                </Element>
+                <OutSource/>
+                <Element name='contactForm'>
+                    <ContactForm/>
+                </Element>
+                <Footer/>
+            </div>
     );
 }
 
