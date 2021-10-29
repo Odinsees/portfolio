@@ -2,17 +2,24 @@
 
 .footerBlock {
   text-align: center;
+  height: 150px;
 
   .footerContainer {
     flex-direction: column;
     border: 1px solid red;
+    padding-top: 10px;
+    background-color: #161616;
 
     .text {
       color: $otherTextColor;
       margin: 0;
+      font-family: $fontFamily;
+      text-transform: uppercase;
+      background-color: #161616;
     }
 
     .iconBox {
+      background-color: #161616;
       display: flex;
       justify-content: space-between;
       min-width: 280px;
@@ -20,14 +27,15 @@
       align-items: center;
 
       .socialIcon {
+        background-color: #161616;
         width: 40px;
         height: 40px;
-        background-color: $primaryColor;
       }
     }
 
     .security {
       color: $otherTextColor;
+      font-family: $fontFamily;
     }
   }
 }

@@ -61,7 +61,9 @@ export const ContactForm = () => {
                                     </div>
                                     <div className={style.infoDetails}>
                                         <h6 className={style.infoTitle}>Call me</h6>
-                                        <span className={style.infoValue}>+375291971705</span>
+                                        <span className={style.infoValue}>
+                                            <a href="tel:+375291971705">+375 29 197 17 05</a>
+                                        </span>
                                     </div>
                                 </li>
                                 <li className={style.liContacts}>
@@ -69,7 +71,9 @@ export const ContactForm = () => {
                                     </div>
                                     <div className={style.infoDetails}>
                                         <h6 className={style.infoTitle}>Email me</h6>
-                                        <span className={style.infoValue}>pavel.o.lebedev@gmail.com</span>
+                                        <span className={style.infoValue}>
+                                            <a href="mailto:pavel.o.lebedev@gmail.com">pavel.o.lebedev@gmail.com</a>
+                                        </span>
                                     </div>
                                 </li>
                             </ul>

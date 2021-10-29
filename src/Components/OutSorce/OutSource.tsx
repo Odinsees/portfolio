@@ -9,7 +9,11 @@ export const OutSource = () => {
         <div className={style.recruitBlock}>
             <div className={`${styleContainer.container} ${style.recruitContainer}`}>
                 <Title title={'Considering options for remote work'}/>
-                <a className={style.recruitButton}>Recruit me</a>
+                <a
+                    href="mailto:pavel.o.lebedev@gmail.com"
+                    role="button"
+                    className={style.recruitButton}>Recruit me
+                </a>
             </div>
         </div>
     );

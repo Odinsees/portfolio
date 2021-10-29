@@ -1,21 +1,31 @@
 @import "../../../src/common/styles/sass/variables.scss";
 
 .recruitBlock {
-  /*height: 40vh;
-  text-align: center;*/
   .recruitContainer {
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid red;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #161616;
 
     .recruitButton {
-      width: 100px;
-      height: 40px;
+      padding: 10px 20px 10px 20px;
+      margin-top: 30px;
+      text-decoration: none;
+      text-align: center;
       background-color: $primaryColor;
+      border: $primaryColor;
       color: $buttonTextColor;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      font-size: 18px;
+      font-family: $fontFamily;
+      border-radius: 30px;
+      transition: 1s;
+
+      &:hover {
+        transform: scale(1.05);
+        transition: 1s;
+      }
     }
   }
 }

@@ -4,7 +4,7 @@ import styleContainer from "../../common/styles/Container.module.css"
 import myPhoto from '../../assets/image/MyPhoto.jpg'
 import linkedinIcon from '../../assets/image/icon/social icon/linkedin.svg'
 import githubIcon from '../../assets/image/icon/social icon/github.svg'
-import instagramIcon from '../../assets/image/icon/social icon/instagram.svg'
+import codeWarsIcon from '../../assets/image/icon/social icon/codewars-svgrepo-com.svg'
 import telegramIcon from '../../assets/image/icon/social icon/telegram.svg'
 import {Title} from "../../common/Components/Titile/Title";
 
@@ -60,19 +60,28 @@ export const Main = () => {
                                 <a
                                     href="#0"
                                     role="button"
-                                    className={style.downloadBTN}>Download CV</a>
+                                    className={style.downloadBTN}>Download CV
+                                </a>
                                 <div className={style.contacts}>
-                                    <a target={'_blank'} href="https://www.linkedin.com/in/pavel-l%D0%B5bedev-641983211/">
-                                        <img src={linkedinIcon} alt=""/>
+                                    <a
+                                        className={style.icon} style={{backgroundImage: `url(${linkedinIcon})`}}
+                                        target={'_blank'}
+                                        href="https://www.linkedin.com/in/pavel-l%D0%B5bedev-641983211/">
                                     </a>
-                                    <a target={'_blank'} href="">
-                                        <img src={githubIcon} alt=""/>
+                                    <a
+                                        className={style.icon} style={{backgroundImage: `url(${githubIcon})`}}
+                                        target={'_blank'}
+                                        href="">
                                     </a>
-                                    <a target={'_blank'} href="">
-                                        <img src={instagramIcon} alt=""/>
+                                    <a
+                                        className={style.icon} style={{backgroundImage: `url(${codeWarsIcon})`}}
+                                        target={'_blank'}
+                                        href="">
                                     </a>
-                                    <a target={'_blank'} href="">
-                                        <img src={telegramIcon} alt=""/>
+                                    <a
+                                        className={style.icon} style={{backgroundImage: `url(${telegramIcon})`}}
+                                        target={'_blank'}
+                                        href="">
                                     </a>
                                 </div>
                             </div>

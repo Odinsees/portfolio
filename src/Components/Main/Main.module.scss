@@ -151,8 +151,15 @@
             }
 
             .contacts {
-              margin-left: 60px;
+              margin-left: 80px;
               position: relative;
+              & a{
+                margin-right: 20px;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                background-position: center;
+              }
               &:before{
                 background-color: rgba(255,255,255,.25);
                 content: '';
@@ -161,20 +168,7 @@
                 width: 60px;
                 position: absolute;
                 top:43%;
-                left: -47%;
-              }
-              & img {
-                margin-left: 10px;
-                background: $primaryColor;
-                background-size: 30px 30px;
-                border-radius: 7px;
-                transition: 1s;
-
-                &:hover {
-                  background: white;
-                  cursor: pointer;
-                  transition: 1s;
-                }
+                left: -34%;
               }
             }
 

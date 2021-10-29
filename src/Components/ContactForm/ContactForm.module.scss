@@ -147,11 +147,12 @@
           .liContacts{
             display: flex;
             align-items: center;
+            margin-bottom: 30px;
             .contactIcon{
               width: 40px;
               height: 40px;
               margin-right: 20px;
-              background-size: 30px 30px;
+              background-size: 40px 40px;
               background-repeat: no-repeat;
               background-position: center;
             }
@@ -172,6 +173,17 @@
                 font-size: 12px;
                 font-weight: 400;
                 line-height: 1.95;
+                & a{
+                  text-decoration: none;
+                  font-family: $fontFamily;
+                  color:$otherTextColor;
+                  font-size: 12px;
+                  transition: 0.5s;
+                  &:hover{
+                    color:$primaryColor;
+                    transition: 0.5s;
+                  }
+                }
               }
             }
           }
