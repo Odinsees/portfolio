@@ -6,11 +6,15 @@ import linkedinIcon from '../../assets/image/icon/social icon/linkedin.svg'
 import githubIcon from '../../assets/image/icon/social icon/github.svg'
 import instagramIcon from '../../assets/image/icon/social icon/instagram.svg'
 import telegramIcon from '../../assets/image/icon/social icon/telegram.svg'
+import {Title} from "../../common/Components/Titile/Title";
 
 export const Main = () => {
     return (
         <div className={style.mainBlock}>
-            <div className={`${styleContainer.container} ${style.mainContainer}`}>\
+            <div className={`${styleContainer.container} ${style.mainContainer}`}>
+                <div className={style.title}>
+                    <Title title={'About Me'}/>
+                </div>
                 <div className={style.info}>
                     <div className={style.myPhoto}>
                         <img src={myPhoto} alt=""/>
@@ -58,7 +62,7 @@ export const Main = () => {
                                     role="button"
                                     className={style.downloadBTN}>Download CV</a>
                                 <div className={style.contacts}>
-                                    <a target={'_blank'} href="">
+                                    <a target={'_blank'} href="https://www.linkedin.com/in/pavel-l%D0%B5bedev-641983211/">
                                         <img src={linkedinIcon} alt=""/>
                                     </a>
                                     <a target={'_blank'} href="">

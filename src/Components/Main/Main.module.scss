@@ -6,14 +6,20 @@
   background-color: $backGroundColor;
 
   .mainContainer {
-    align-items: flex-start;
-
+    flex-direction: column;
+    justify-content: flex-start;
+    .title{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
     .info {
       width: 100%;
-      height: fit-content;
+      /*height: fit-content;*/
       box-sizing: border-box;
       display: flex;
       flex-wrap: wrap;
+      margin-top: 30px;
 
       .myPhoto {
         max-width: 40%;
@@ -23,7 +29,6 @@
         & img {
           box-sizing: border-box;
           max-width: 400px;
-          width: 100%;
           border-bottom: 4px solid $backGroundColor;
           border-right: 4px solid $backGroundColor;
           transition: 1s;
