@@ -6,10 +6,7 @@
   background-color: $backGroundColor;
 
   @media screen and (max-width: 1200px) {
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    padding-bottom: 60px;
     display: block;
     height: auto;
   }
@@ -17,16 +14,12 @@
   .mainContainer {
     flex-direction: column;
     justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 50px;
     @media screen and (max-width: 1200px) {
       width: 100%;
       height: auto;
       margin: 0 auto;
-      padding-top: 20px;
-      padding-bottom: 70px;
-    }
-    @media screen and (max-width: 768px) {
-      padding-top: 20px;
-      padding-bottom: 70px;
     }
 
     .title {
@@ -49,8 +42,9 @@
         padding-left: 15px;
         padding-right: 15px;
         box-sizing: border-box;
+        margin-bottom: 20px;
         @media screen and (max-width: 1200px) {
-          margin: 0 auto;
+          margin: 20px auto;
           width: 400px;
         }
         @media screen and (max-width: 768px) {
@@ -64,8 +58,6 @@
           border-bottom: 4px solid $backGroundColor;
           border-right: 4px solid $backGroundColor;
           transition: 1s;
-          @media screen and (max-width: 430px) {
-          }
 
           &:hover {
             border-bottom: 4px solid $primaryColor;
@@ -77,7 +69,6 @@
 
       .infoContent {
         width: 60%;
-        //height: 100%;
         color: white;
         padding-left: 15px;
         padding-right: 15px;
@@ -113,6 +104,10 @@
             font-weight: 700;
             @media screen and (max-width: 768px) {
               @include titleText($fontFamily, 25px, 1.6);
+              font-weight: 700;
+            }
+            @media screen and (max-width: 390px) {
+              @include titleText($fontFamily, 20px, 1.6);
               font-weight: 700;
             }
           }
@@ -162,6 +157,7 @@
                   display: flex;
                   flex-wrap: wrap;
                   width: 100%;
+                  align-items: baseline;
                 }
               }
 
@@ -170,9 +166,9 @@
                 font-weight: 400;
                 margin-right: 10px;
                 font-size: 15px;
-                //@media screen and (max-width: 920px) {
-                //  font-size: 13px;
-                //}
+                @media screen and (max-width: 690px) {
+                  font-size: 12px;
+                }
               }
 
               & p {
@@ -181,6 +177,9 @@
                 margin-top: 0;
                 color: $otherTextColor;
                 font-size: 15px;
+                @media screen and (max-width: 690px) {
+                  font-size: 12px;
+                }
               }
 
               & a {
@@ -190,7 +189,7 @@
                 color: $primaryColor;
                 text-decoration: none;
                 @media screen and (max-width: 690px) {
-                  font-size: 11px;
+                  font-size: 12px;
                 }
               }
             }

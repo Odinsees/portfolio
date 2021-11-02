@@ -1,187 +1,220 @@
 @import "../../../src/common/styles/sass/variables.scss";
 
-.formContainer {
-  flex-direction: column;
+.formBlock{
+  margin: 40px 0;
+  .formContainer {
+    flex-direction: column;
 
-  .titleBlock {
-
-  }
-
-  .contactFormWrapper {
-    width: 90%;
-    display: flex;
-    box-sizing: border-box;
-    .formBox {
-      width: 60%;
-      padding-left: 15px;
-      padding-right: 15px;
+    .contactFormWrapper {
+      width: 90%;
+      display: flex;
       box-sizing: border-box;
-      .contactsForm{
+      @media screen and (max-width: 900px) {
+        display: block;
         width: 100%;
+      }
+      .formBox {
+        width: 60%;
+        padding-left: 15px;
+        padding-right: 15px;
         box-sizing: border-box;
-        .contentTitle{
-          color:$titleTextColor;
-          margin: 0 0 22px 0;
-          font-family: $fontFamily;
-          font-size: 1.5rem;
-          font-weight: 500;
+        @media screen and (max-width: 900px) {
+          width: 100%;
+          margin: 0 auto;
+          padding-right: 0;
+          padding-left: 0;
         }
-        .form{
-          display: flex;
-          flex-wrap: wrap;
-          margin-left: -15 px;
-          margin-right: -15 px;
+        .contactsForm{
+          width: 100%;
           box-sizing: border-box;
-          .formInputTop{
-            width: 50%;
-            margin-bottom: 25px;
-            padding-right: 15px;
-            box-sizing: border-box;
-            & input{
-              font-family: $fontFamily;
-              width: 100%;
-              box-sizing: border-box;
-              padding: 9px 14px;
-              border: none;
-              background-color: #161616;
-              color: $otherTextColor;
-              outline:none;
-              border-bottom: 1px solid #161616;
-              transition: 1s;
-              &:hover{
-                border-bottom: 1px solid $primaryColor;
-                transition: 1s;
-              }
-            }
-          }
-          .formInput{
-            width: 100%;
-            margin-bottom: 25px;
-            padding-right: 15px;
-            box-sizing: border-box;
-            & input{
-              font-family: $fontFamily;
-              width: 100%;
-              box-sizing: border-box;
-              padding: 9px 14px;
-              border: none;
-              background-color: #161616;
-              color: $otherTextColor;
-              outline:none;
-              border-bottom: 1px solid #161616;
-              transition: 1s;
-              &:hover{
-                border-bottom: 1px solid $primaryColor;
-                transition: 1s;
-              }
-            }
-          }
-          .formTextArea{
-            width: 100%;
-            margin-bottom: 25px;
-            padding-right: 15px;
-            box-sizing: border-box;
-            & textarea{
-              font-family: $fontFamily;
-              width: 100%;
-              height: 150px;
-              padding: 9px 14px;
-              resize: none;
-              box-sizing: border-box;
-              border: none;
-              background-color: #161616;
-              color: $otherTextColor;
-              outline:none;
-              border-bottom: 1px solid #161616;
-              transition: 1s;
-              &:hover{
-                border-bottom: 1px solid $primaryColor;
-                transition: 1s;
-              }
-            }
-          }
-          .formButton {
-            text-align: center;
-            text-decoration: none;
-            margin-right: 23px;
-            background-color: $primaryColor;
-            border: $primaryColor;
-            color: $buttonTextColor;
-            font-size: 14px;
-            padding: 10px 35px;
+          .contentTitle{
+            color:$titleTextColor;
+            margin: 0 0 22px 0;
             font-family: $fontFamily;
-            border-radius: 20px;
-            transition: 1s;
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+          .form{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -15 px;
+            margin-right: -15 px;
+            box-sizing: border-box;
+            .formInputTop{
+              width: 50%;
+              margin-bottom: 25px;
+              padding-right: 15px;
+              box-sizing: border-box;
+              @media screen and (max-width: 900px) {
+                width: 100%;
+              }
 
-            &:hover {
-              transform: scale(1.05);
+              & input{
+                font-family: $fontFamily;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 9px 14px;
+                border: none;
+                background-color: #161616;
+                color: $otherTextColor;
+                outline:none;
+                border-bottom: 1px solid #161616;
+                transition: 1s;
+
+                &:hover{
+                  border-bottom: 1px solid $primaryColor;
+                  transition: 1s;
+                }
+              }
+            }
+            .formInput{
+              width: 100%;
+              margin-bottom: 25px;
+              padding-right: 15px;
+              box-sizing: border-box;
+              & input{
+                font-family: $fontFamily;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 9px 14px;
+                border: none;
+                background-color: #161616;
+                color: $otherTextColor;
+                outline:none;
+                border-bottom: 1px solid #161616;
+                transition: 1s;
+                &:hover{
+                  border-bottom: 1px solid $primaryColor;
+                  transition: 1s;
+                }
+              }
+            }
+            .formTextArea{
+              width: 100%;
+              margin-bottom: 25px;
+              padding-right: 15px;
+              box-sizing: border-box;
+              & textarea{
+                font-family: $fontFamily;
+                width: 100%;
+                height: 150px;
+                padding: 9px 14px;
+                resize: none;
+                box-sizing: border-box;
+                border: none;
+                background-color: #161616;
+                color: $otherTextColor;
+                outline:none;
+                border-bottom: 1px solid #161616;
+                transition: 1s;
+                &:hover{
+                  border-bottom: 1px solid $primaryColor;
+                  transition: 1s;
+                }
+              }
+            }
+            .formButton {
+              text-align: center;
+              text-decoration: none;
+              margin-right: 23px;
+              background-color: $primaryColor;
+              border: $primaryColor;
+              color: $buttonTextColor;
+              font-size: 14px;
+              padding: 10px 35px;
+              font-family: $fontFamily;
+              border-radius: 20px;
               transition: 1s;
+              @media screen and (max-width: 900px) {
+                margin: 0 auto;
+              }
+
+              &:hover {
+                transform: scale(1.05);
+                transition: 1s;
+              }
             }
           }
         }
       }
-    }
 
-    .contactsInfo {
-      width: 40%;
-      .Info{
-        .contentTitle{
-          margin: 0 0 12px 0;
-          color:$titleTextColor;
-          font-family: $fontFamily;
-          font-size: 1.5rem;
-          font-weight: 500;
+      .contactsInfo {
+        width: 40%;
+        @media screen and (max-width: 900px) {
+          width: 100%;
+          margin-top: 40px;
         }
-        .infoDescription{
-          font-family: $fontFamily;
-          margin-bottom: 28px;
-          font-size: 15px;
-          color:$otherTextColor;
-        }
-        .ulContacts{
-          margin-block-start: 0;
-          margin-block-end: 0;
-          margin-inline-start: 0;
-          margin-inline-end: 0;
-          padding-inline-start: 0;
-          .liContacts{
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-            .contactIcon{
-              width: 40px;
-              height: 40px;
-              margin-right: 20px;
-              background-size: 40px 40px;
-              background-repeat: no-repeat;
-              background-position: center;
+        .Info{
+          .contentTitle{
+            margin: 0 0 12px 0;
+            color:$titleTextColor;
+            font-family: $fontFamily;
+            font-size: 1.5rem;
+            font-weight: 500;
+            @media screen and (max-width: 900px) {
+              display: none;
             }
-            .infoDetails{
-              padding-left: 20px;
-              border-left: 1px solid $otherTextColor;
-              .infoTitle{
-                margin: 0;
-                font-size: 15px;
-                font-weight: 600;
-                color:$titleTextColor;
-                font-family: $fontFamily;
+          }
+          .infoDescription{
+            font-family: $fontFamily;
+            margin-bottom: 28px;
+            font-size: 15px;
+            color:$otherTextColor;
+            text-align: justify;
+            @media screen and (max-width: 900px) {
+              display: none;
+            }
+          }
+          .ulContacts{
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            padding-inline-start: 0;
+            @media screen and (max-width: 900px) {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
+            .liContacts{
+              display: flex;
+              align-items: center;
+              margin-bottom: 30px;
+              .contactIcon{
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+                background-size: 40px 40px;
+                background-repeat: no-repeat;
+                background-position: center;
               }
-              .infoValue{
-                margin: 0;
-                font-family: $fontFamily;
-                color:$otherTextColor;
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 1.95;
-                & a{
-                  text-decoration: none;
+              .infoDetails{
+                padding-left: 20px;
+                border-left: 1px solid $otherTextColor;
+                .infoTitle{
+                  margin: 0;
+                  font-size: 15px;
+                  font-weight: 600;
+                  color:$titleTextColor;
+                  font-family: $fontFamily;
+                }
+                .infoValue{
+                  margin: 0;
                   font-family: $fontFamily;
                   color:$otherTextColor;
                   font-size: 12px;
-                  transition: 0.5s;
-                  &:hover{
-                    color:$primaryColor;
+                  font-weight: 400;
+                  line-height: 1.95;
+                  & a{
+                    text-decoration: none;
+                    font-family: $fontFamily;
+                    color:$otherTextColor;
+                    font-size: 12px;
                     transition: 0.5s;
+                    &:hover{
+                      color:$primaryColor;
+                      transition: 0.5s;
+                    }
                   }
                 }
               }
@@ -192,5 +225,7 @@
     }
   }
 }
+
+
 
 
