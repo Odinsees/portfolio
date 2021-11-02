@@ -5,34 +5,69 @@
   height: 100vh;
   background-color: $backGroundColor;
 
+  @media screen and (max-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 60px;
+    display: block;
+    height: auto;
+  }
+
   .mainContainer {
     flex-direction: column;
     justify-content: flex-start;
-    .title{
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 70px;
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 20px;
+      padding-bottom: 70px;
+    }
+
+    .title {
       width: 100%;
       display: flex;
       justify-content: center;
     }
+
     .info {
       width: 100%;
-      /*height: fit-content;*/
       box-sizing: border-box;
       display: flex;
       flex-wrap: wrap;
-      margin-top: 30px;
+      @media screen and (max-width: 1200px) {
+        display: block;
+      }
 
       .myPhoto {
-        max-width: 40%;
+        width: 40%;
         padding-left: 15px;
         padding-right: 15px;
         box-sizing: border-box;
+        @media screen and (max-width: 1200px) {
+          margin: 0 auto;
+          width: 400px;
+        }
+        @media screen and (max-width: 768px) {
+          margin: 0 auto;
+          width: 300px;
+        }
+
         & img {
           box-sizing: border-box;
-          max-width: 400px;
+          width: 100%;
           border-bottom: 4px solid $backGroundColor;
           border-right: 4px solid $backGroundColor;
           transition: 1s;
-          &:hover{
+          @media screen and (max-width: 430px) {
+          }
+
+          &:hover {
             border-bottom: 4px solid $primaryColor;
             border-right: 4px solid $primaryColor;
             transition: 1s;
@@ -42,12 +77,18 @@
 
       .infoContent {
         width: 60%;
-        height: 100%;
+        //height: 100%;
         color: white;
         padding-left: 15px;
         padding-right: 15px;
         box-sizing: border-box;
-
+        @media screen and (max-width: 1200px) {
+          margin: 0 auto;
+          text-align: center;
+        }
+        @media screen and (max-width: 796px) {
+          width: 80%;
+        }
         .infoBlock {
 
           .subTitle {
@@ -58,6 +99,9 @@
             font-weight: 500;
             line-height: 1.2;
             color: $primaryColor;
+            @media screen and (max-width: 1200px) {
+              display: none;
+            }
           }
 
           .contentTitle {
@@ -67,6 +111,10 @@
 
             @include titleText($fontFamily, 31px, 1.6);
             font-weight: 700;
+            @media screen and (max-width: 768px) {
+              @include titleText($fontFamily, 25px, 1.6);
+              font-weight: 700;
+            }
           }
 
           .contentDescription {
@@ -77,6 +125,7 @@
             color: #9f9f9f;
             font-family: Poppins, sans-serif;
             line-height: 1.95;
+            text-align: justify;
 
             & p {
               border-bottom: 2px solid rgba(255, 255, 255, .08);
@@ -91,16 +140,29 @@
             margin-bottom: 4px;
             padding: 29px 0;
             box-sizing: border-box;
+            @media screen and (max-width: 600px) {
+              display: flex;
+              flex-wrap: wrap;
+              width: 100%;
+            }
 
             font-family: Poppins, sans-serif;
+            @media screen and (max-width: 1200px) {
+              font-size: 14px;
+              text-align: left;
+            }
 
             .row {
               display: flex;
               flex-wrap: wrap;
-
               .singleInfo {
                 margin-bottom: 10px;
                 width: 50%;
+                @media screen and (max-width: 600px) {
+                  display: flex;
+                  flex-wrap: wrap;
+                  width: 100%;
+                }
               }
 
               & span {
@@ -108,6 +170,9 @@
                 font-weight: 400;
                 margin-right: 10px;
                 font-size: 15px;
+                //@media screen and (max-width: 920px) {
+                //  font-size: 13px;
+                //}
               }
 
               & p {
@@ -124,6 +189,9 @@
                 margin-top: 0;
                 color: $primaryColor;
                 text-decoration: none;
+                @media screen and (max-width: 690px) {
+                  font-size: 11px;
+                }
               }
             }
           }
@@ -131,6 +199,15 @@
           .contactBlock {
             display: flex;
             align-items: center;
+            @media screen and (max-width: 1200px) {
+              justify-content: space-between;
+            }
+            @media screen and (max-width: 850px) {
+              flex-wrap: wrap;
+            }
+            @media screen and (max-width: 600px) {
+              justify-content: center;
+            }
 
             .downloadBTN {
               text-decoration: none;
@@ -143,6 +220,12 @@
               font-family: $fontFamily;
               border-radius: 30px;
               transition: 1s;
+              @media screen and (max-width: 850px) {
+                margin-right: 0;
+              }
+              @media screen and (max-width: 547px) {
+                margin-bottom: 20px;
+              }
 
               &:hover {
                 transform: scale(1.05);
@@ -153,22 +236,33 @@
             .contacts {
               margin-left: 80px;
               position: relative;
-              & a{
+              @media screen and (max-width: 850px) {
+                margin-left: 30px;
+              }
+              & a {
                 margin-right: 20px;
                 display: inline-block;
                 width: 40px;
                 height: 40px;
                 background-position: center;
+                @media screen and (max-width: 1200px) {
+                  width: 30px;
+                  height: 30px;
+                }
               }
-              &:before{
-                background-color: rgba(255,255,255,.25);
+
+              &:before {
+                background-color: rgba(255, 255, 255, .25);
                 content: '';
                 height: 2px;
                 margin-right: 23px;
                 width: 60px;
                 position: absolute;
-                top:43%;
+                top: 43%;
                 left: -34%;
+                @media screen and (max-width: 1200px) {
+                  display: none;
+                }
               }
             }
 
@@ -178,6 +272,7 @@
     }
   }
 }
+
 
 
 

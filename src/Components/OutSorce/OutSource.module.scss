@@ -1,17 +1,15 @@
 @import "../../../src/common/styles/sass/variables.scss";
 
 .recruitBlock {
+  padding-top: 30px;
   .recruitContainer {
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid red;
-    padding-top: 30px;
     padding-bottom: 30px;
     background-color: #161616;
 
     .recruitButton {
       padding: 10px 20px 10px 20px;
-      margin-top: 30px;
       text-decoration: none;
       text-align: center;
       background-color: $primaryColor;

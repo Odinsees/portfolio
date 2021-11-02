@@ -2,11 +2,10 @@
 
 .footerBlock {
   text-align: center;
-  height: 150px;
+  height: 110px;
 
   .footerContainer {
     flex-direction: column;
-    border: 1px solid red;
     padding-top: 10px;
     background-color: #161616;
 
@@ -23,7 +22,6 @@
       display: flex;
       justify-content: space-between;
       min-width: 280px;
-      border: 1px solid red;
       align-items: center;
 
       .socialIcon {

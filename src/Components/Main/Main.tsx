@@ -25,10 +25,10 @@ export const Main = () => {
                             <h6 className={style.contentTitle}>I'm Pavel Lebedev, <br/> Front-end Developer</h6>
                             <div className={style.contentDescription}>
                                 <p>
-                                    I am a freelancer based in the United Kingdom
-                                    and i have been building noteworthy UX/UI designs
+                                    I am a freelancer based in the Republic of Belarus
+                                    and i have been building noteworthy UI
                                     and websites for years, which comply with the
-                                    latest design trends. I help convert a vision and
+                                    latest trends and technology. I help convert a vision and
                                     an idea into meaningful and useful products.
                                     Having a sharp eye for product evolution
                                     helps me prioritize tasks, iterate fast and deliver faster.

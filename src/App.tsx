@@ -28,9 +28,9 @@ function App() {
                     <MyProject/>
                 </Element>
                 <OutSource/>
-                <Element name='contactForm'>
-                    <ContactForm/>
-                </Element>
+                {/*<Element name='contactForm'>*/}
+                {/*    <ContactForm/>*/}
+                {/*</Element>*/}
                 <Footer/>
             </div>
     );

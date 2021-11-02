@@ -11,14 +11,14 @@ export const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h3 className={style.text}>Lebedev Pavel</h3>
+                <h3 className={style.text}>Pavel Lebedev</h3>
                 <div className={style.iconBox}>
                     <a style={{backgroundImage:`url(${linkedinIcon})`}} href="" className={style.socialIcon}></a>
                     <a style={{backgroundImage:`url(${githubIcon})`}} href="" className={style.socialIcon}></a>
                     <a style={{backgroundImage:`url(${codeWarsIcon})`}} href="" className={style.socialIcon}></a>
                     <a style={{backgroundImage:`url(${telegramIcon})`}} href="" className={style.socialIcon}></a>
                 </div>
-                <span className={style.security}>© 2021 All rights reserved</span>
+                <span className={style.security}>2021</span>
             </div>
         </div>
     );
