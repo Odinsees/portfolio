@@ -40,11 +40,7 @@
             margin-left: -15 px;
             margin-right: -15 px;
             box-sizing: border-box;
-            @media screen and (-webkit-min-device-pixel-ratio: 0) {
-              select:focus, textarea:focus, input:focus {
-                font-size: 16px;
-              }
-            }
+
             .formInputTop{
               width: 50%;
               margin-bottom: 25px;
@@ -65,6 +61,12 @@
                 outline:none;
                 border-bottom: 1px solid #161616;
                 transition: 1s;
+                @media screen and (max-width: 900px) {
+                  font-size: 16px;
+                }
+                @media screen and (-webkit-min-device-pixel-ratio: 0) {
+                    font-size: 16px;
+                }
 
                 &:hover{
                   border-bottom: 1px solid $primaryColor;
@@ -88,6 +90,9 @@
                 outline:none;
                 border-bottom: 1px solid #161616;
                 transition: 1s;
+                @media screen and (-webkit-min-device-pixel-ratio: 0) {
+                    font-size: 16px;
+                }
                 &:hover{
                   border-bottom: 1px solid $primaryColor;
                   transition: 1s;
@@ -112,6 +117,9 @@
                 outline:none;
                 border-bottom: 1px solid #161616;
                 transition: 1s;
+                @media screen and (-webkit-min-device-pixel-ratio: 0) {
+                    font-size: 16px;
+                }
                 &:hover{
                   border-bottom: 1px solid $primaryColor;
                   transition: 1s;

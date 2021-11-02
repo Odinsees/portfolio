@@ -9,27 +9,27 @@ export const Nav = () => {
                 activeClass="active"
                 to="main" spy={true}
                 smooth={true}
-                duration={500}>main
+                duration={500}
+            >about me
             </Link>
             <Link
-                activeClass="active"
+                activeClass="skills"
                 to="skills" spy={true}
                 smooth={true}
                 duration={500}>skills
             </Link>
             <Link
-                activeClass="active"
+                activeClass="myProject"
                 to="myProject" spy={true}
                 smooth={true}
                 duration={500}>project
             </Link>
             <Link
-                activeClass="active"
+                activeClass="contactForm"
                 to="contactForm" spy={true}
                 smooth={true}
                 duration={500}>contacts
             </Link>
-
         </div>
     );
 }

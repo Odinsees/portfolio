@@ -3,11 +3,12 @@
 .footerBlock {
   text-align: center;
   height: 110px;
+  background-color: #161616;
 
   .footerContainer {
     flex-direction: column;
     padding-top: 10px;
-    background-color: #161616;
+    background-color: inherit;
 
     .text {
       color: $otherTextColor;

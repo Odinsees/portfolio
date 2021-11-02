@@ -4,6 +4,7 @@
     text-align: left;
     display: flex;
     flex-direction: column;
+    background-color: inherit;
     & a{
         @include otherText($fontFamily,17px,1.95);
         font-weight: 600;
@@ -11,6 +12,11 @@
         position: relative;
         text-transform: uppercase;
         transition: 1s;
+        background-color: inherit;
+        @media screen and (max-width: 1200px) {
+            @include otherText($fontFamily,14px,1.95);
+            color: $titleTextColor;
+        }
         &:hover{
             transition: 1s;
             color: $primaryColor;
@@ -27,3 +33,8 @@
         }
     }
 }
+
+//@media screen and (max-width: 768px) {
+//    margin: 0 auto;
+//    width: 300px;
+//}

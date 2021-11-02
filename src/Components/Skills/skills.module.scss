@@ -1,6 +1,7 @@
 @import "../../../src/common/styles/sass/variables.scss";
 
 .skillsBlock {
+  background-color: inherit;
   .skillsContainer {
     flex-direction: column;
     width: 80%;
@@ -11,7 +12,7 @@
       flex-wrap: wrap;
       justify-content: space-around;
       padding: 10px;
-      background-color: #161616;
+      background-color: inherit;
     }
   }
 }

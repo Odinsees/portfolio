@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.module.scss';
 import {Header} from "./Components/Header/Header";
 import {Main} from "./Components/Main/Main";
@@ -13,6 +13,7 @@ import {Link, Element, Events, animateScroll as scroll, scrollSpy, scroller} fro
 
 
 function App() {
+
     return (
             <div className={style.App}>
                 <div className={style.header}>
