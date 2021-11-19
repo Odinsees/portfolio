@@ -10,15 +10,20 @@
   text-align: center;
   justify-content: space-around;
   margin: 20px;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
   border-bottom: 1px solid $secondBackGroundColor;
+  border-right: 1px solid $secondBackGroundColor;
   transition: 1s;
+  border-radius: 7px;
   @media screen and (max-width: 400px) {
-    width: 100%
+    width: 100px;
+    height: 100px;
+    min-height: auto;
   }
   &:hover{
     transition: 1s;
     border-bottom: 1px solid $primaryColor;
+    border-right: 1px solid $primaryColor;
   }
   .icon {
     width: 90px;
@@ -29,6 +34,12 @@
     background-size: 100% 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    @media screen and (max-width: 400px) {
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
   }
 
   .title {
@@ -36,6 +47,10 @@
     background-color: $secondBackGroundColor;
     margin: 0 0 20px 0;
     font-family: $fontFamily;
+    @media screen and (max-width: 400px) {
+      font-size: 12px;
+      margin: 0 0 5px 0;
+    }
   }
 }
 

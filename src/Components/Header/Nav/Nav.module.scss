@@ -13,6 +13,7 @@
         text-transform: uppercase;
         transition: 1s;
         background-color: inherit;
+        cursor: pointer;
         @media screen and (max-width: 1200px) {
             @include otherText($fontFamily,14px,1.95);
             color: $titleTextColor;
@@ -27,8 +28,8 @@
                 background-image:url("../../../assets/image/icon/arrowNav.svg");
                 width: 15px;
                 height: 15px;
-                left: -20px;
-                top: 8px;
+                left: -14px;
+                top: 9px;
             }
         }
     }

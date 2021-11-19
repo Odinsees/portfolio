@@ -2,19 +2,21 @@
     width: 1440px;
     margin: 0 auto;
     position: absolute;
+    left: 35px;
     @media screen and (max-width: 1440px) {
         width: auto;
+        left: 0;
     }
     .header{
         position: fixed;
         top: 42%;
         background-color: rgba(22, 22, 22, 0.001);
         transition-duration: 1500ms;
-        transform: translate(-110px);
+        transform: translate(-135px);
         transition: 2s;
         &:hover{
             top: 42%;
-            left: 30px;
+            left: 20px;
             transition-duration: 1000ms;
             transform: translate(0);
             transition: 2s;

@@ -27,7 +27,7 @@ export const Main = () => {
                                 <p>
                                     I am a freelancer based in the Republic of Belarus
                                     and i have been building noteworthy UI
-                                    and websites for years, which comply with the
+                                    and websites, which comply with the
                                     latest trends and technology. I help convert a vision and
                                     an idea into meaningful and useful products.
                                     Having a sharp eye for product evolution
@@ -58,8 +58,9 @@ export const Main = () => {
                             </div>
                             <div className={style.contactBlock}>
                                 <a
-                                    href="#0"
+                                    href="#"
                                     role="button"
+                                    download=""
                                     className={style.downloadBTN}>Download CV
                                 </a>
                                 <div className={style.contacts}>
@@ -71,17 +72,17 @@ export const Main = () => {
                                     <a
                                         className={style.icon} style={{backgroundImage: `url(${githubIcon})`}}
                                         target={'_blank'}
-                                        href="">
+                                        href="https://github.com/Odinsees">
                                     </a>
                                     <a
                                         className={style.icon} style={{backgroundImage: `url(${codeWarsIcon})`}}
                                         target={'_blank'}
-                                        href="">
+                                        href="https://www.codewars.com/users/Odinsees">
                                     </a>
                                     <a
                                         className={style.icon} style={{backgroundImage: `url(${telegramIcon})`}}
                                         target={'_blank'}
-                                        href="">
+                                        href="https://t.me/odin_sees">
                                     </a>
                                 </div>
                             </div>

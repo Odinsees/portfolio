@@ -11,8 +11,9 @@ type ProjectType = {
     id: number
     showDesc: boolean
     title: string
-    icon: {backgroundImage:string}
+    icon: { backgroundImage: string }
     description: string
+    url: string
 }
 
 
@@ -34,12 +35,27 @@ export const MyProject = () => {
         {
             id: 1,
             showDesc: false,
+            title: "Todolist",
+            icon: todolistBG,
+            description: `React, Redux, TS, React-Hooks, HOC, HTML, CSS`,
+            url: 'https://odinsees.github.io/todolist/'
+        },
+        {
+            id: 2,
+            showDesc: false,
             title: "Social Network",
             icon: SocialNetworkBG,
-            description: "React, Redux, TS, React-Hooks, HOC, Container Component, HTML, CSS"
+            description: "React, Redux, TS, React-Hooks, HOC, Container Component, HTML, CSS",
+            url: 'https://odinsees.github.io/social_network/#/login'
         },
-        {id: 2, showDesc: false, title: "Todolist", icon: todolistBG, description: `React, Redux, TS, React-Hooks, HTML, CSS`},
-        {id: 3, showDesc: false, title: "Counter", icon: counterBG, description: `React, Redux, TS, LocalStorage, React-Hooks, HTML, CSS`},
+        {
+            id: 3,
+            showDesc: false,
+            title: "Counter",
+            icon: counterBG,
+            description: `React, Redux, TS, LocalStorage, React-Hooks, HTML, CSS`,
+            url: 'https://odinsees.github.io/Count/'
+        },
     ])
 
     const changeShowDesc = (pId: number) => {
@@ -53,13 +69,15 @@ export const MyProject = () => {
                 <div className={style.projectBox}>
                     {project.map(project => {
                         return (
-                            <Project key={project.id}
-                                     style={project.icon}
-                                     title={project.title}
-                                     description={project.description}
-                                     showDesc={project.showDesc}
-                                     id={project.id}
-                                     changeShowDesc={changeShowDesc}
+                            <Project
+                                key={project.id}
+                                style={project.icon}
+                                title={project.title}
+                                description={project.description}
+                                showDesc={project.showDesc}
+                                id={project.id}
+                                changeShowDesc={changeShowDesc}
+                                url={project.url}
                             />
                         )
                     })}

@@ -11,6 +11,7 @@
   align-items: center;
   text-align: left;
   margin: 0 5px 20px 5px;
+  border-radius: 10px;
 
   .projectImg {
     width: 100%;
@@ -21,6 +22,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    border-radius: 10px 10px 0 0;
 
     &:before {
       position: absolute;
@@ -34,6 +36,7 @@
     }
 
     &:hover .viewButton{
+      text-decoration: none;
       opacity: 1;
       transition: 0.5s;
       cursor: pointer;
@@ -60,6 +63,7 @@
   .projectInfo {
     text-align: center;
     background-color: $secondBackGroundColor;
+    border-radius: 10px;
     .projectTitle {
       @include titleText($fontFamily,1.25rem,1);
       background-color: $secondBackGroundColor;
@@ -78,6 +82,11 @@
       width: 100%;
       text-align: center;
       background-color: $secondBackGroundColor;
+      transition: 1s;
+      &:hover{
+        color: $buttonTextColor;
+        transition: 1s;
+      }
     }
 
     .projectDescription {
@@ -87,6 +96,7 @@
       padding-left: 5px;
       text-align: center;
       background-color: $secondBackGroundColor;
+      border-radius: 10px;
     }
   }
 

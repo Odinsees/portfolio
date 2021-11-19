@@ -7,7 +7,8 @@ type PropsType = {
     changeShowDesc: (id: number) => void
     showDesc: boolean
     id: number
-    style:{backgroundImage:string}
+    style: { backgroundImage: string }
+    url: string
 }
 
 
@@ -16,7 +17,11 @@ export const Project = (props: PropsType) => {
     return (
         <div className={style.projectBlock}>
             <div style={props.style} className={style.projectImg}>
-                <a className={style.viewButton}>View this</a>
+                <a
+                    className={style.viewButton}
+                    href={`${props.url}`}
+                    target={'_blank'}
+                >View this</a>
             </div>
             <div className={style.projectInfo}>
                 <div className={style.projectTitle}>
@@ -24,12 +29,14 @@ export const Project = (props: PropsType) => {
                 </div>
                 <span
                     className={style.projectTechnologies}
-                    onClick={() => props.changeShowDesc( props.id)}>Technology:</span>
+                    onClick={() => props.changeShowDesc(props.id)}>Technology</span>
                 {props.showDesc
-                        ? <div
-                            onClick={() => props.changeShowDesc( props.id)}
-                            className={style.projectDescription}>{props.description}</div>
-                        : ''
+                    ?
+                    <div
+                        onClick={() => props.changeShowDesc(props.id)}
+                        className={style.projectDescription}>{props.description}
+                    </div>
+                    : ''
                 }
             </div>
         </div>

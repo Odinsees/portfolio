@@ -13,12 +13,17 @@ export const Footer = () => {
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <h3 className={style.text}>Pavel Lebedev</h3>
                 <div className={style.iconBox}>
-                    <a style={{backgroundImage:`url(${linkedinIcon})`}} href="" className={style.socialIcon}></a>
-                    <a style={{backgroundImage:`url(${githubIcon})`}} href="" className={style.socialIcon}></a>
-                    <a style={{backgroundImage:`url(${codeWarsIcon})`}} href="" className={style.socialIcon}></a>
-                    <a style={{backgroundImage:`url(${telegramIcon})`}} href="" className={style.socialIcon}></a>
+                    <a style={{backgroundImage: `url(${linkedinIcon})`}} target={'_blank'}
+                       href="https://www.linkedin.com/in/pavel-l%D0%B5bedev-641983211/"
+                       className={style.socialIcon}></a>
+                    <a style={{backgroundImage: `url(${githubIcon})`}} target={'_blank'}
+                       href="https://github.com/Odinsees" className={style.socialIcon}></a>
+                    <a style={{backgroundImage: `url(${codeWarsIcon})`}} target={'_blank'}
+                       href="https://www.codewars.com/users/Odinsees" className={style.socialIcon}></a>
+                    <a style={{backgroundImage: `url(${telegramIcon})`}} target={'_blank'} href="https://t.me/odin_sees"
+                       className={style.socialIcon}></a>
                 </div>
-                <span className={style.security}>2021</span>
+                <div className={style.security}>2021</div>
             </div>
         </div>
     );
